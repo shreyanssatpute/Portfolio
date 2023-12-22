@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=600">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    
+.dev {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .container2,
+        .container1 {
+			
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: #D1D3E0;
+            border-radius: 25px;
+            position: relative;
+		top: 130px;
+			width: 70%;
+        }
+
+        .container2 {
+            left: 60%;
+        }
+
+        .container1 {
+            left: 40%;
+        }
+
+        .ui-widgets,
+        .ui-widgets1 {
+            display: inline-block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 9rem;
+            margin: 1.5rem;
+            border: 0.87rem solid palegreen;
+            box-shadow: inset 0 0 7px rgb(164, 164, 164);
+            text-align: center;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+        }
+		.ui-widgets {
+            border-top-color: #ffffff;
+            border-right-color: white;
+            border-left-color: #5a659e;
+            border-bottom-color: white;
+            border-style: solid;
+        }
+
+        .ui-widgets1 {
+            border-top-color: #5a659e;
+            border-right-color: white;
+            border-left-color: #5a659e;
+            border-bottom-color: white;
+            border-style: solid;
+        }
+
+        .ui-values {
+            top: 42px;
+            position: absolute;
+            left: 8px;
+            right: 0;
+            font-size: 2.0rem;
+        }
+
+        .ui-labels {
+            left: 0;
+            bottom: -24px;
+            color: black;
+            position: absolute;
+            width: 100%;
+            font-size: 9px;
+        }
+		@media (max-width: 600px) {
+            .dev {
+                grid-template-columns: 1fr;
+            }
+
+            .container2,
+            .container1 {
+                width: 70%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+            }
+        }
+
+
+    html, body {
+      cursor: none;
+      margin: 0;
+  
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 32px; /* Set the width of your custom icon */
+      height: 32px; /* Set the height of your custom icon */
+      pointer-events: none;
+    }
+
+.download-button {
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #5a659e;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      
+    }
+
+    .download-button:hover {
+      background-color: #D1D3E0;
+    }
+
+    /* Use flex to align heading and button on the same line */
+    #download {
+      display: flex;
+      align-items: center;
+    }
+
+    h1.s {
+      margin-right: 10px; /* Add margin for spacing between heading and button */
+    }
+
+    /* Move the button to the very right */
+    .spacer {
+      flex-grow: 1;
+    }
+
+.collapsible {
+  background-color: #5a659e;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #5a659e;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #D1D3E0;
+  border-radius: 5px;
+}
+.collapsible{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+   /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 800px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+.collapsible1{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url('html.png'); /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 820px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+.collapsible2{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url('python.png'); /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 820px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+.collapsible3{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url('python.png'); /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 820px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+.collapsible4{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url('python.png'); /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 820px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+.collapsible5{
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url('python.png'); /* Replace with the actual path or URL of your Python icon */
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-position-x: 820px; /* Adjust the position as needed */
+  background-size: 65px;
+
+  
+
+}
+    .texts{
+      text-align: center;
+      font-size: 25px;
+    }
+    .cursor {
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 24px;
+      background-color: black;
+      animation: blink 0.7s infinite;
+    }
+
+    /* Adjust the cursor color and make it more visible */
+    .cursor {
+      background-color: black;
+    }
+
+    /* Animation for cursor blinking */
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+
+  
+    /* Add your custom styles here */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    header {
+      background-color: #5a659e;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: azure;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #D1D3E0;
+    }
+    .r{
+        font-weight: 700;
+        color: white;
+    }
+
+    .q{
+      font-weight: bold;
+    }
+    .x{
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;  
+    }
+    .s{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    .a{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 22px;
+        
+        
+        
+
+    }
+    .l{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .d{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .b{
+      color: rgb(255, 255, 255);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    .v{
+        font-size: px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .r{
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .profile-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      
+      background-color: #D1D3E0;
+      border: #D1D3E0;
+      
+    }
+    
+
+    .about-me {
+      flex: 1;
+      margin-left: 20px;
+      border-radius: 15px;
+      padding: 4px;
+      font-size: small;
+    }
+
+    .about-me h2 {
+      margin-top: 0;
+      padding: 4px;
+      border-radius: 15px;
+    }
+
+    .about-me p {
+      margin-bottom: 10px;
+      border-radius: 15px;
+    }
+
+    .about-me p:last-child {
+      margin-bottom: 0;
+      border-radius: 15px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+    }
+
+    footer {
+      background-color: #222;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+
+    .skills {
+      display: block;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+
+    .skill {
+      flex: 0 0 calc(50% - 10px);
+      background-color: #D1D3E0;
+;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border-radius: 25px;
+    }
+
+    .project:hover {
+      transform: scale(0.978);
+    }
+   
+    #projects {
+            background-color: #D1D3E0;
+            padding: 40px;
+            border-radius: 45px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+       
+
+        .project img {
+            border-radius: 10px;
+            max-width: 100%;
+            max-height: 120px;
+            height: auto;
+            margin-right: 15px; /* Add margin for spacing between image and text */
+        }
+
+        .project-text {
+            flex-grow: 1;
+        }
+
+        .project h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media only screen and (max-width: 600px) {
+  .resume-text {
+    display: none;
+  }
+}
+    
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+
+      <section id="download">
+        <h1 class="s">I'm Shreyans Satpute</h1>
+        <section id="download"></section>
+        <div class="spacer"></div>
+        <a href="Resume.pdf" download="Resume.pdf">
+          <button class="download-button"> <span class="resume-text">Resume &nbsp</span><i style="font-size:16px" class="fa">&#xf019;</i></button>
+        </a>
+      </section>
+      <div class="flex-container">
+        <div class="profile-image">
+          <div class="background-image"></div>
+          <br>
+          
+          <img src='pic.jpg' onmouseover="this.src='best.png';" onmouseout="this.src='pic.jpg';"/>
+          
+
+       
+        </div>
+        <div class="about-me">
+          <h2 class="a"> Web Development Expertise | UI UX Design | Python | C Proficiency | Android App Development | Passionate About Exploring Data Science</h2>
+          
+        </div>
+      </div>
+   
+      
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="x">About Me</h2>
+      <p>My name is Shreyans Satpute, and I am currently pursuing my Bachelor's degree in Information Technology at Shah and Anchor Kutchi Engineering College.</p>
+      <p>I have a strong passion for programming and technology. I am proficient in Python, which allows me to create efficient and robust solutions. I also have a good grasp of web development & UI-UX, enabling me to design user-friendly websites. Additionally, I am well-versed in C programming, which has enhanced my problem-solving skills and low-level programming knowledge. I am also well-equipped with knowledge about Databases such as SQl & MongoDB</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    
+    <div class="container">
+      
+      <h2 class="d">Skills</h2>
+     
+
+      <br>
+    
+      <div class="skills">
+        <div class="skill">
+          
+          <h3>Web - Development</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+  
+        </div>
+        <br>
+        <div class="skill">
+          <h3>Python -
+          Advance</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <br>
+        <div class="skill">
+          <h3>C -
+          Programming</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <br>
+        
+
+        <div class="skill">
+          <h3>MongoDb</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+<br>
+        <div class="skill">
+          <h3>UI UX Design</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold; font-size: 24px;">Currently Exploring</p>
+        
+       
+        <div class="dev">
+          <div class="container2">
+              <div class="ui-widgets">
+                  <div class="ui-values" style="font-size: 18px; text-align: center; font-weight: 500;">Data Science</div>
+                  <div class="ui-labels" style="box-shadow: none;"></div>
+              </div>
+          </div>
+      
+          <div class="container1">
+              <div class="ui-widgets1">
+                  <div class="ui-values" style="font-size: 18px; text-align: center; left: 2px;font-weight: 500; ">Android Development</div>
+                  <div class="ui-labels" style="box-shadow: none;"></div>
+              </div>
+          </div>
+        
+      </div>
+    </div>
+   
+    </div>
+
+
+<br>
+<br>
+  </section>
+  
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="v">Projects</h2>
+      <br>
+      
+      <button class="collapsible" style="background-image: url('html.png');">&nbsp Web Development</button>
+    
+<div class="content">
+  <br>
+  <div class="projects">
+
+    <div class="project" onclick="redirectToDesiredSite('https://github.com/shreyanssatpute/Chat-Web-app')">
+      <img src="chat2.webp" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" >Real Time Chatting web app</h3>
+          <p style="padding-left: 3px;">Chat app made using NodeJS that helps user to chat with people in real time , also allows them to share media with each other.This web app uses ChatEngine API and Vite Framework</p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.neocities.org/Qr-It/')">
+      <img src="QR3.jpg copy.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">QR code generator</h3>
+          <p style="padding-left: 3px;">QR-It is a web app that generates QR codes for any Text/URL provided and also gives an option to download and store history</p>
+      </div>
+    </div>
+
+      <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.github.io/Flappy-Birdss/')">
+        <img src="flappy.png" alt="Project Image">
+        <div class="project-text">
+          <br>
+            <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Flappy Bird Game</h3>
+            <p style="padding-left: 3px;">Flappy bird game made with help of html ,css and js provides an interactive experience to the player with added sound effects to the game </p>
+        </div>
+      </div>
+
+      <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.neocities.org/budgett/')">
+        <img src="budget2.webp" alt="Project Image">
+        <div class="project-text">
+          <br>
+            <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Budget Tracker</h3>
+            <p style="padding-left: 3px;">A web app that helps user to track their buget it comes with lots of interactive touches also uses graphs and pie charts to showcase user their transactions</p>
+        </div>
+      </div>
+
+      <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.github.io/background-remover/')">
+        <img src="remover.png" alt="Project Image">
+        <div class="project-text">
+          <br>
+            <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Remove-It</h3>
+            <p style="padding-left: 3px;">Web app made to remove background of any image provided by the user . Uses API from "remove.bg".</p>
+        </div>
+      </div>
+
+      <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.github.io/AQI/')">
+        <img src="air.png" alt="Project Image">
+        <div class="project-text">
+          <br>
+            <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Air Quality Index Detector</h3>
+            <p style="padding-left: 3px;">Shows the AQI to the user as per their location, AQI is displayed in the range 0-5 .Uses open-weather API to fetch the real time data about the Air Quality</p>
+        </div>
+      </div>
+
+    
+     
+
+
+
+  </div>
+</div>
+<br>
+
+<button class="collapsible" style="background-image: url('ui.png');">&nbsp UI UX Design</button>
+<div class="content">
+  <br>
+  <div class="projects">
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/nkNtgromlc1NQQk2RRU4lx/Ambula?page-id=0%3A1&type=design&node-id=1-2&viewport=290%2C290%2C0.2&t=t8c3IBmprRsWB19t-1&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1')">
+      <img src="ambula2.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Ambula : Virtual Doctor Consultation Service</h3>
+          <p style="padding-left: 3px;">A Prototype made for a Virtual Doctor Consultation Service,made by keeping smooth user experience as the center of attention </p>
+      </div>
+    </div>
+
+   
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/wwy1yu2JF4VCZlvMOyzjpB/reddit-clone-but-better?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&t=4MFgq3zx1Eb8zLW1-1')">
+      <img src="reddit copy.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Reddit Clone</h3>
+          <p style="padding-left: 3px;">A Reddit clone prototype made using Figma adding new character to Reddit's original design language</p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/MQLhOXYSMpy1THZ1oAtH9P/personal-project?page-id=0%3A1&type=design&node-id=317-701&viewport=-135%2C107%2C0.52&t=pUxBYxKLuKjRIdYR-1&scaling=scale-down&starting-point-node-id=317%3A701')">
+      <img src="music.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Melody</h3>
+          <p style="padding-left: 3px;">Melody is a Music Player Application prototype made using Figma, crafted with an aim of making the Interface Simple,Interactive and Easy to Use</p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/qwWVTRAN5j6w3ji7T4yRtP/Slow-learners-identification?page-id=0%3A1&type=design&node-id=1-2&viewport=865%2C-87%2C1.3&t=53HXSLnhCDSMe4AI-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design')">
+      <img src="flower.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Flowr</h3>
+          <p style="padding-left: 3px;">Flowr is a Prototype for an app that aims to Identify slow learners,this project helped my team to qualify for "Smart India Hackathon" at college level </p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/UKPxWc67q0qUSk6DM19vMs/Kangaroo-Laundry?page-id=0%3A1&type=design&node-id=2-2&viewport=-164%2C186%2C0.15&t=BXZRn29X2I9dQb3E-1&scaling=scale-down&starting-point-node-id=2%3A2')">
+      <img src="kangaroo.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Kangaroo Laundry Service</h3>
+          <p style="padding-left: 3px;">"Kangaroo Laundry" is a prototype for a Laundry delivery service site made using figma and aims to give pleasent user experience </p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/MM0qAOXvJusXWdAK09mQRq/Food-App?page-id=0%3A1&type=design&node-id=1-2&viewport=161%2C220%2C0.15&t=YsuFBUJoODg5hcdV-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design')">
+      <img src="food.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Food Hunt </h3>
+          <p style="padding-left: 3px;">UI Prototype of an interactive landing page crafted for a food delivery website</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+
+<button class="collapsible" style="background-image: url('android.png');">&nbsp Android App Development</button>
+<div class="content">
+  <br>
+  <div class="projects">
+
+    <div class="project">
+      <img src="chatbot.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">ChatBot Using ChatGPT API</h3>
+          <p style="padding-left: 3px;">ChatBot is an App based on the API of OPEN-AI that takes user input and responds to the user itself. This App is still in the development stage. </p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://github.com/shreyanssatpute/UnitCov')">
+      <img src="unit.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Unit Convertor</h3>
+          <p style="padding-left: 3px;">UnConv is an App that helps the user to convert One unit value to other such as, converting Centimeters to Inches </p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<br>
+
+<button class="collapsible" style="background-image: url('python.png');">&nbsp Python</button>
+<div class="content">
+  <br>
+  <div class="projects">
+
+    <div class="project">
+      <img src="emp python.jpg" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Employee Management System</h3>
+          <p style="padding-left: 3px;">Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with SQL database , made using Pycharm</p>
+      </div>
+    </div>
+
+    <div class="project" onclick="redirectToDesiredSite('https://replit.com/@SHREYANS-VAIBHA/Tic-Tac-Toe')">
+      <img src="tic.png" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Tic-Tac-Toe</h3>
+          <p style="padding-left: 3px;">Classic Game of Tic-Tac-Toe in python that accepts the input of 2 users and marks the marker 'X' or 'O' </p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+<br>
+
+<button class="collapsible" style="background-image: url('java.png');">&nbsp Java</button>
+<div class="content">
+  <br>
+  <div class="projects">
+
+    <div class="project">
+      <img src="emp java.jpg" alt="Project Image">
+      <div class="project-text">
+        <br>
+          <h3 class="q" style="padding-left: 3px;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Employee Management System</h3>
+          <p style="padding-left: 3px;">Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with SQL database , made using Java on Netbeans </p>
+      </div>
+    </div>
+
+    
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+  </section>
+
+ <section id="contact">
+    <div class="container">
+      <div class="background-image"></div>
+      
+      <br>
+      <div class="contact-info">
+        <div class="background-image1"></div>
+        <h2 class="r">Contact</h2>
+
+       <div class="logo" style="font-size: 33px;">
+        
+        <i style="font-size:33px" class="fa" onclick="redirectToDesiredSite('https://www.linkedin.com/in/shreyans-satpute-739b16246/')">&#xf08c;</i>
+        <i style="font-size:33px" class="fa" onclick="redirectToDesiredSite('https://mail.google.com/mail/?view=cm&to=shreyanssatpute@gmail.com&su=Your%20Subject&body=Your%20Message')">&#xf0e0;</i>
+        <i style="font-size:33px" class="fa" onclick="redirectToDesiredSite('https://github.com/shreyanssatpute')">&#xf09b;</i>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2023 Shreyans Satpute. All rights reserved.</p>
+  </footer>
+  
+
+  <img src="cursor.png" alt="Custom Icon" class="custom-cursor">
+  
+  
+    
+
+  <script>
+    function updateCursorPosition(event) {
+      requestAnimationFrame(function() {
+        var cursor = document.querySelector(".custom-cursor");
+        cursor.style.left = event.clientX + "px";
+        cursor.style.top = (event.clientY + window.scrollY) + "px";
+      });
+    }
+
+    document.addEventListener("mousemove", updateCursorPosition);
+    window.addEventListener("scroll", function () {
+      requestAnimationFrame(function() {
+        var cursor = document.querySelector(".custom-cursor");
+        cursor.style.top = (event.clientY + window.scrollY) + "px";
+      });
+    });
+  </script>
+  
+  <script>
+
+
+    function redirectToDesiredSite(url) {
+        window.location.href = url;
+    }
+
+
+
+
+    // JavaScript code...
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling
+      const links = document.querySelectorAll('nav ul li a');
+      links.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+      });
+
+      function smoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+
+      // Skill progress animation
+      const skills = document.querySelectorAll('.skill-progress .progress');
+      skills.forEach(skill => {
+        const skillProgress = skill.getAttribute('data-progress');
+        skill.style.width = skillProgress;
+      });
+    });
+
+     /* this is the new js */
+    const skills = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Android Development",
+      "MongoDb",
+      "SQL",
+      "Java",
+      "C Programming",
+      // Add more skills as needed
+    ];
+
+    const textElement = document.getElementById("text");
+    const cursorElement = document.querySelector(".cursor");
+    let currentSkillIndex = 0;
+    let currentCharacterIndex = 0;
+    let isErasing = false;
+
+    function typeText() {
+      const currentSkill = skills[currentSkillIndex];
+      const textToShow = isErasing ? currentSkill.slice(0, currentCharacterIndex) : currentSkill.slice(0, currentCharacterIndex + 1);
+      textElement.textContent = textToShow;
+
+      if (!isErasing) {
+        cursorElement.style.display = 'inline'; // Show cursor while typing
+        currentCharacterIndex++;
+
+        if (currentCharacterIndex > currentSkill.length) {
+          // Delay before starting to erase the text
+          isErasing = true;
+          setTimeout(() => {
+            cursorElement.style.display = 'none'; // Hide cursor before erasing
+            typeText();
+          }, 1000); // Adjust the time before erasing as needed
+        } else {
+          setTimeout(typeText, 100); // Adjust the typing speed as needed
+        }
+      } else {
+        if (currentCharacterIndex === 0) {
+          isErasing = false;
+          currentSkillIndex = (currentSkillIndex + 1) % skills.length;
+        }
+        currentCharacterIndex--;
+        setTimeout(typeText, 50); // Adjust the erasing speed as needed
+      }
+    }
+
+    // Start the typing animation when the page loads
+    typeText();
+  </script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+  </script>
+</body>
+</html>
