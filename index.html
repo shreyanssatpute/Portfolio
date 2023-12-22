@@ -12,12 +12,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-    .rr{
-      font-family: 'Courier New', Courier, monospace;
+ 
+    @media (max-width: 767px) {
+    .rr {
+    font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
       letter-spacing: 1.5px;
-      opacity: 0.7;
-    }
+      opacity: 0.7; /* Apply bold font for phone screens */
+  }
+}
 .dev {
             margin: 0;
             display: grid;
@@ -682,10 +685,11 @@
         </div>
         <br>
         <br>
+        <br>
         <p style="font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: bold; font-size: 24px;">Currently Exploring</p>
         
-       
+   
         <div class="dev">
           <div class="container2">
               <div class="ui-widgets">
